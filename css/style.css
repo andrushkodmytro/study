@@ -1,0 +1,68 @@
+/* line 4, ../sass/style.scss */
+.container {
+  display: flex;
+}
+/* line 7, ../sass/style.scss */
+.container .section1, .container section2 {
+  height: 100vh;
+  width: 744px;
+}
+/* line 11, ../sass/style.scss */
+.container .section1 {
+  position: relative;
+}
+/* line 13, ../sass/style.scss */
+.container .section1 .logo {
+  margin-top: 40px;
+  margin-left: 128px;
+}
+/* line 17, ../sass/style.scss */
+.container .section1 form {
+  position: absolute;
+  left: 128px;
+  top: 200px;
+}
+/* line 22, ../sass/style.scss */
+.container .section1 form .form__header h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+}
+/* line 27, ../sass/style.scss */
+.container .section1 form .form__input {
+  display: flex;
+  flex-direction: column;
+}
+/* line 30, ../sass/style.scss */
+.container .section1 form .form__input label {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 24px;
+}
+/* line 36, ../sass/style.scss */
+.container .section1 form .form__input button, .container .section1 form .form__input input {
+  height: 40px;
+  width: 320px;
+  border: none;
+  border-radius: 4px;
+}
+/* line 44, ../sass/style.scss */
+.container .section1 form .form__input input {
+  background-color: #f1f3f5;
+}
+/* line 47, ../sass/style.scss */
+.container .section1 form .form__input button {
+  background-color: #01ce9f;
+}
+/* line 52, ../sass/style.scss */
+.container .section1 form .form__container {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 58, ../sass/style.scss */
+.container .section1 form .signup {
+  display: flex;
+  margin-top: 24px;
+  justify-content: space-between;
+}

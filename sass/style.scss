@@ -1,0 +1,68 @@
+$main__color:#01ce9f;
+$input__color:#f1f3f5;
+
+.container{
+    display:flex;
+    
+        .section1, section2{
+            height: 100vh;
+            width:744px;
+        }
+        .section1{
+            position: relative;
+            .logo{
+                margin-top:40px;
+                margin-left:128px; 
+            }
+            form{
+                position: absolute;
+                left:128px;
+                top:200px;
+                .form__header{
+                    h1{
+                        font-size: 48px;
+                        text-transform: uppercase;
+                    }
+                }
+                .form__input{
+                    display:flex;
+                    flex-direction: column;
+                    label{
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        margin-top: 24px;
+                    }
+                    
+                    button,input{
+                        height:40px;
+                        width: 320px;
+                        border: none;
+                        border-radius: 4px;
+                        
+
+                    }
+                    input{
+                        background-color: $input__color;
+                    }
+                    button{
+                        background-color: $main__color;
+                    }
+                    
+                }
+                .form__container{
+                    margin-top:24px;
+                    margin-bottom: 24px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .signup{
+                    display: flex;
+                    margin-top: 24px;
+                    justify-content: space-between;
+                }
+            }
+            
+        }
+        
+    
+}
