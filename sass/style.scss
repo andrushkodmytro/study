@@ -1,5 +1,10 @@
 $main__color:#01ce9f;
 $input__color:#f1f3f5;
+$label__color:#868e95;
+$text__color:#222529;
+$header__font:"NebasNeue";
+$label__font:"SourceSans-semibold";
+$link__font:"SourceSans-regular";
 
 .container{
     display:flex;
@@ -18,10 +23,12 @@ $input__color:#f1f3f5;
                 position: absolute;
                 left:128px;
                 top:200px;
+                color:$text__color;
                 .form__header{
                     h1{
                         font-size: 48px;
                         text-transform: uppercase;
+                        font-family: $header__font;
                     }
                 }
                 .form__input{
@@ -31,6 +38,8 @@ $input__color:#f1f3f5;
                         font-size: 16px;
                         text-transform: uppercase;
                         margin-top: 24px;
+                        font-family: $label__font;
+                        color:$label__color;
                     }
                     
                     button,input{
@@ -46,6 +55,9 @@ $input__color:#f1f3f5;
                     }
                     button{
                         background-color: $main__color;
+                        color: #fff;
+                        text-transform: uppercase;
+
                     }
                     
                 }
@@ -54,11 +66,53 @@ $input__color:#f1f3f5;
                     margin-bottom: 24px;
                     display: flex;
                     justify-content: space-between;
+                    font-family: $link__font;
+                    .form__checkbox{
+                        input{
+                            display: none;
+                        }
+                        label{
+                            position: relative;
+                            padding-left: 25px;
+                            display: inline-block;
+
+                        }
+                        label:before{
+                            content: "";
+                            display: inline-block;
+                            height: 16px;
+                            width: 16px;
+                            position: absolute;
+                            background-color: $input__color;
+                            left: 0;
+                            border-radius: 4px;
+                        }
+                        input:checked + label:before{
+                            content:"\2713";
+                            text-align: center;
+                            color: #fff;
+                            background-color: $main__color;
+                        }
+
+                    }
+                    .password__restore{
+                        a{
+                            color:$main__color;
+                            text-decoration: none;
+
+                        }
+                    }
                 }
                 .signup{
                     display: flex;
                     margin-top: 24px;
-                    justify-content: space-between;
+                    // justify-content: space-between;
+                    font-family: $link__font;
+                    a{
+                        color:$main__color;
+                        text-decoration: none;
+                        padding-left: 5px;
+                    }
                 }
             }
             
